@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.css" />
-    <title>Search</title>
+    <title>Search 2.0</title>
   </head>
   <body>
     <form class="search-form" autocomplete="off">
@@ -19,8 +19,13 @@
       </label>
       <button type="submit">Submit</button>
     </form>
-    <div class="loader is-hidden"></div>
     <ul class="gallery"></ul>
+    <div class="button-wrapper">
+      <button type="button" class="btn-load-more is-hidden">Load more</button>
+    </div>
+    <div class="loader-wrapper">
+      <div class="loader is-hidden"></div>
+    </div>
     <script src="./main.js" type="module"></script>
   </body>
 </html>
