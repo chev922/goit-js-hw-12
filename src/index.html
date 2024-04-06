@@ -3,13 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>goit-js-hw-10</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <title>Search</title>
   </head>
   <body>
-    <ul>
-      <li><a href="./1-timer.html">Timer</a></li>
-      <li><a href="./2-snackbar.html">Snackbar</a></li>
-    </ul>
+    <form class="search-form" autocomplete="off">
+      <label>
+        <input
+          class="input"
+          type="text"
+          name="search"
+          placeholder="Search images..."
+          autofocus
+        />
+      </label>
+      <button type="submit">Submit</button>
+    </form>
+    <div class="loader is-hidden"></div>
+    <ul class="gallery"></ul>
+    <script src="./main.js" type="module"></script>
   </body>
 </html>
