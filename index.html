@@ -3,14 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>goit-js-hw-10</title>
     
-    <link rel="stylesheet" href="/goit-js-hw-12/assets/index-7035db55.css">
+    <title>Search</title>
+    <script type="module" crossorigin src="/goit-js-hw-12/commonHelpers.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-12/assets/vendor-5b791d57.js">
+    <link rel="stylesheet" href="/goit-js-hw-12/assets/vendor-cf6910df.css">
+    <link rel="stylesheet" href="/goit-js-hw-12/assets/index-a1c4ca31.css">
   </head>
   <body>
-    <ul>
-      <li><a href="./1-timer.html">Timer</a></li>
-      <li><a href="./2-snackbar.html">Snackbar</a></li>
-    </ul>
+    <form class="search-form" autocomplete="off">
+      <label>
+        <input
+          class="input"
+          type="text"
+          name="search"
+          placeholder="Search images..."
+          autofocus
+        />
+      </label>
+      <button type="submit">Submit</button>
+    </form>
+    <div class="loader is-hidden"></div>
+    <ul class="gallery"></ul>
+    
   </body>
 </html>
